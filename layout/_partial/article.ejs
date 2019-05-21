@@ -5,14 +5,14 @@
       <div class="mdui-col">
         <div class="mdui-grid-tile">
           <a data-fancybox="gallery" href="<%- url_for(photo) %>">
-            <img src="/images/grey.png" class="lazy" data-original="<%- url_for(photo) %>" style="height: 160px; border-radius: 2px;">
+            <img src="/images/grey.png" class="lazyload" data-original="<%- url_for(photo) %>" style="height: 160px; border-radius: 2px;">
           </a>
         </div>
       </div>
     <% }); %>
   </article>
   <%- js([theme.gallery.jquery_js, theme.gallery.lazyload_js, theme.gallery.fancybox_js]) %>
-  <script>$("img.lazy").lazyload({effect:"fadeIn"});</script>
+  <script>$("#main article img.lazyload").lazyload({effect:"fadeIn"});</script>
 <% } else if (page.tagcloud && site.tags.length) { %>
   <style>
     #tagcloud a{margin:0 8px;padding:8px 0;line-height:40px;white-space:nowrap;text-decoration:none;opacity:.87;-webkit-transition:all .2s cubic-bezier(.4,0,.2,1);-o-transition:all .2s cubic-bezier(.4,0,.2,1);transition:all .2s cubic-bezier(.4,0,.2,1)}
@@ -22,6 +22,8 @@
     <%- tagcloud({min_font: 16, max_font: 35, amount: 9999, color: true, start_color: '#3f51b5', end_color: '#ff4081'}) %>
   </article>
 <% } else { %>
+  <%- css(theme.gallery.fancybox_css) %>
+  <style>#main article .mdui-card-content .center-block{display:block!important;margin-right:auto!important;margin-left:auto!important}</style>
   <article class="mdui-card mdui-m-b-5">
     <header class="mdui-card-media">
       <img src="<%- page.thumbnail || '/images/random/material-' + (Math.round(Math.random() * 18) + 1) + '.png' %>" style="max-height: 240px;">
@@ -119,6 +121,8 @@
       </div>
     <% } %>
   </article>
+  <%- js([theme.gallery.jquery_js, theme.gallery.fancybox_js]) %>
+  <script>$("#main article .mdui-card-content img.fancybox").on("click",function(e){$.fancybox.open({src:$(this).attr("src")});});</script>
 <% } %>
 <% if (page.prev || page.next) { %>
   <nav id="paginator">
