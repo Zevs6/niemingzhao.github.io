@@ -1,12 +1,12 @@
 <% if (page.current === 1 && is_home() && theme.notice) { %>
-  <article class="mdui-card mdui-m-b-5">
+  <article class="mdui-card mdui-m-b-5 mdui-hoverable">
     <div class="mdui-card-content mdui-typo mdui-ripple">
       <i class="mdui-icon material-icons mdui-text-color-deep-orange">notifications</i> <%- theme.notice %>
     </div>
   </article>
 <% } %>
 <% page.posts.each(function (post) { %>
-  <article class="mdui-card mdui-m-b-5">
+  <article class="mdui-card mdui-m-b-5 mdui-hoverable">
     <a href="<%- url_for(post.link || post.path) %>"<% if (post.link) { %> target="_blank"<% } %>>
       <header class="mdui-card-media mdui-ripple">
         <img src="<%- post.thumbnail || '/images/random/material-' + (Math.round(Math.random() * 18) + 1) + '.png' %>" style="max-height: 240px;">

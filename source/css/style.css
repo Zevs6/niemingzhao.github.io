@@ -329,7 +329,7 @@ img.avatar-animation:hover {
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  padding: 0 8px;
+  position: relative;
 }
 
 .page-number {
@@ -354,6 +354,15 @@ img.avatar-animation:hover {
 #paginator .extend {
   text-decoration: none;
   color: inherit;
+  position: absolute;
+}
+
+#paginator .extend.prev {
+  left: 8px;
+}
+
+#paginator .extend.next {
+  right: 8px;
 }
 
 #paginator .spacer {

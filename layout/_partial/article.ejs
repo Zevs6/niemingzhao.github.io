@@ -3,7 +3,7 @@
   <article class="mdui-row-xs-2 mdui-row-sm-3 mdui-row-md-4 mdui-row-lg-5 mdui-row-xl-6 mdui-grid-list">
     <% page.photos.forEach(function (photo) { %>
       <div class="mdui-col">
-        <div class="mdui-grid-tile">
+        <div class="mdui-grid-tile mdui-hoverable">
           <a data-fancybox="gallery" href="<%- url_for(photo) %>">
             <img src="/images/grey.png" class="lazyload" data-original="<%- url_for(photo) %>" style="height: 160px; border-radius: 2px;">
           </a>
@@ -24,7 +24,7 @@
 <% } else { %>
   <%- css(theme.gallery.fancybox_css) %>
   <style>#main article .mdui-card-content .center-block{display:block!important;margin-right:auto!important;margin-left:auto!important}</style>
-  <article class="mdui-card mdui-m-b-5">
+  <article class="mdui-card mdui-m-b-5 mdui-hoverable">
     <header class="mdui-card-media">
       <img src="<%- page.thumbnail || '/images/random/material-' + (Math.round(Math.random() * 18) + 1) + '.png' %>" style="max-height: 240px;">
       <div class="mdui-card-media-covered">
