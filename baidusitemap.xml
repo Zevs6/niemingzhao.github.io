@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://www.niemingzhao.top/2019/01/01/markdown-demo/</loc>
+    <lastmod>2019-07-14</lastmod>
+  </url>  <url>
+    <loc>http://www.niemingzhao.top/2019/07/15/hello-world/</loc>
+    <lastmod>2019-07-14</lastmod>
+  </url>  <url>
+    <loc>http://www.niemingzhao.top/2016/08/23/Markdown%E8%AF%AD%E6%B3%95%E5%B0%8F%E8%AE%B0/</loc>
+    <lastmod>2019-07-14</lastmod>
+  </url>  <url>
     <loc>http://www.niemingzhao.top/2019/06/22/Java-Web%E6%9E%B6%E6%9E%84%E5%8F%91%E5%B1%95/</loc>
-    <lastmod>2019-06-22</lastmod>
+    <lastmod>2019-07-14</lastmod>
   </url>  <url>
     <loc>http://www.niemingzhao.top/2016/09/04/%E8%AE%B0%E4%B8%80%E4%B8%AAjs%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0%E5%B0%8F%E6%8F%92%E4%BB%B6/</loc>
     <lastmod>2019-06-17</lastmod>
@@ -20,15 +29,6 @@
     <lastmod>2019-06-17</lastmod>
   </url>  <url>
     <loc>http://www.niemingzhao.top/2017/01/07/%E4%B8%BA%E6%9C%AC%E6%9C%BAGit%E9%85%8D%E7%BD%AESSH%E9%93%BE%E6%8E%A5/</loc>
-    <lastmod>2019-06-17</lastmod>
-  </url>  <url>
-    <loc>http://www.niemingzhao.top/2019/01/01/markdown-demo/</loc>
-    <lastmod>2019-06-17</lastmod>
-  </url>  <url>
-    <loc>http://www.niemingzhao.top/2019/06/17/hello-world/</loc>
-    <lastmod>2019-06-17</lastmod>
-  </url>  <url>
-    <loc>http://www.niemingzhao.top/2016/08/23/Markdown%E8%AF%AD%E6%B3%95%E5%B0%8F%E8%AE%B0/</loc>
     <lastmod>2019-06-17</lastmod>
   </url>  <url>
     <loc>http://www.niemingzhao.top/2016/10/05/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%B0%8F%E8%AE%B0/</loc>
