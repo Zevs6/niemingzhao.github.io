@@ -59,12 +59,12 @@ busuanzi:
   busuanzi_js: http://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
 qrcode:
   caption: 发送到手机
-  use: plugin
+  use: online
 donate:
 search:
   placeholder: 请输入关键字
   path: /search.xml
-  use: plugin
+  use: online
 comment:
   use: false
   disqus_shortname:

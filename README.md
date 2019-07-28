@@ -10,11 +10,11 @@ An elegant Material Design theme for [Hexo](https://hexo.io/), based on [MDUI](h
 $ git clone -b theme https://github.com/niemingzhao/niemingzhao.github.io.git themes/default
 ```
 
-Make a copy of `_config.template.yml` and rename to `_config.yml`, then configure `_config.yml` when using the theme.
+Make a copy of `_config.template.yml` under the same folder and rename the copied file to `_config.yml` (called `theme configuration file`). **This is the necessary step.**
 
 ### Enable
 
-Modify `theme` setting in `_config.yml` of the site to `default`.
+Modify `theme` item in `_config.yml` in the site root directory (called `site configuration file`) to `default`.
 
 ### Update
 
@@ -89,12 +89,12 @@ busuanzi:
   busuanzi_js: http://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
 qrcode:
   caption: 发送到手机
-  use: plugin
+  use: online
 donate:
 search:
   placeholder: 请输入关键字
   path: /search.xml
-  use: plugin
+  use: online
 comment:
   use: false
   disqus_shortname:
@@ -155,8 +155,18 @@ license: xxx  # License description of the article.
 donate: false  # Disable article donate link.
 toc: true  # Enable article toc.
 comments: true  # Enable article comment.
+
+tagcloud: true  # Turn the current page into a tagcloud page.
+photos:  # Turn the current page into a gallery page.
+- xxx
 ```
 
 ### Other
 
 > `Dark Mode`: Long press the page header to toggle dark mode.
+
+> `Sticky Post`: Use with the plugin [`hexo-generator-topindex`](https://github.com/amlove2/hexo-generator-topindex), posts can be set to the top.
+
+> `Fancybox`: Set the `fancybox` class on the `<img>` tag in the post to enable the picture to popup, and the `center-block` class to center the picture.
+
+**Recommended**: This theme works better with the parser [`hexo-renderer-markdown`](https://github.com/niemingzhao/hexo-renderer-markdown).
