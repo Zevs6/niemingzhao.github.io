@@ -72,7 +72,7 @@ Definition
 [链接](https://www.baidu.com/ "Baidu")
 [链接][link]
 ![图片](https://www.baidu.com/img/bd_logo1.png "Baidu")
-![图片][image]
+![图片][image]{.fancybox .center-block}
 [锚点](#anchor "Anchor")
 [锚点][anchor]
 
