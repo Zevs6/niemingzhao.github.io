@@ -42,6 +42,8 @@ pages:
   link: /tagcloud
 - name: 画廊
   link: /gallery
+- name: 电视直播
+  link: /tv
 links:
 - name: 我的简历
   link: http://images.niemingzhao.top/my_resume.html
